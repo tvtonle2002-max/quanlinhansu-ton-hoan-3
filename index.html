@@ -10,15 +10,26 @@
     <title>Minh Anh — Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     >
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    >
     <link rel="stylesheet" href="styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script defer src="app.js"></script>
   </head>
   <body>
+    <div class="loading-screen" role="status" aria-label="Đang tải trang">
+      <span class="loading-spinner" aria-hidden="true"></span>
+      <span>Đang tải trải nghiệm...</span>
+    </div>
     <div class="portfolio">
-      <header class="site-header">
+      <header class="site-header" data-aos="fade-down">
         <a class="brand" href="#home" aria-label="Minh Anh, về đầu trang">
           <span class="brand-mark">MA</span>
           <span>minhanh<span class="brand-dot">.</span></span>
@@ -35,7 +46,7 @@
       </header>
 
       <main class="main-content" id="home">
-        <section class="hero panel" aria-labelledby="hero-title">
+        <section class="hero panel" aria-labelledby="hero-title" data-aos="fade-up">
           <div class="hero-copy">
             <p class="eyebrow"><span class="eyebrow-line"></span> PORTFOLIO · 2025</p>
             <h1 id="hero-title">Xin chào, mình là<br><span>Minh Anh.</span></h1>
@@ -63,7 +74,7 @@
           </div>
         </section>
 
-        <section class="work-section" id="work" aria-labelledby="work-title">
+        <section class="work-section" id="work" aria-labelledby="work-title" data-aos="fade-up">
           <div class="section-heading">
             <div>
               <p class="eyebrow"><span class="eyebrow-line"></span> TUYỂN CHỌN</p>
@@ -72,7 +83,7 @@
             <span class="section-count">01 / 03</span>
           </div>
           <div class="project-list">
-            <article class="project-card project-coral">
+            <article class="project-card project-coral" data-aos="fade-up" data-aos-delay="0">
               <div class="project-visual visual-orbit" aria-hidden="true">
                 <span class="visual-label">nếp sống<br>mới</span>
                 <span class="visual-ring"></span>
@@ -87,7 +98,7 @@
                 <a class="project-link" href="#contact" aria-label="Tìm hiểu dự án Nếp">↗</a>
               </div>
             </article>
-            <article class="project-card project-lilac">
+            <article class="project-card project-lilac" data-aos="fade-up" data-aos-delay="80">
               <div class="project-visual visual-editorial" aria-hidden="true">
                 <span class="editorial-top">STUDIO / 2025</span>
                 <span class="editorial-word">FORM<br>& FEEL</span>
@@ -102,7 +113,7 @@
                 <a class="project-link" href="#contact" aria-label="Tìm hiểu dự án Form and Feel">↗</a>
               </div>
             </article>
-            <article class="project-card project-yellow">
+            <article class="project-card project-yellow" data-aos="fade-up" data-aos-delay="160">
               <div class="project-visual visual-commerce" aria-hidden="true">
                 <span class="commerce-sticker">good<br>things<br>inside</span>
                 <span class="commerce-box"></span>
@@ -120,7 +131,7 @@
           </div>
         </section>
 
-        <section class="about-section panel" id="about" aria-labelledby="about-title">
+        <section class="about-section panel" id="about" aria-labelledby="about-title" data-aos="fade-up">
           <div>
             <p class="eyebrow"><span class="eyebrow-line"></span> MỘT CHÚT VỀ MÌNH</p>
             <h2 id="about-title">Ý tưởng tốt bắt đầu từ sự tò mò.</h2>
@@ -137,7 +148,7 @@
       </main>
 
       <aside class="sidebar" aria-label="Thông tin cá nhân">
-        <section class="sidebar-card profile-card">
+        <section class="sidebar-card profile-card" data-aos="fade-left">
           <div class="profile-top">
             <span class="profile-label">HELLO, THERE!</span>
             <span class="profile-sparkle" aria-hidden="true">✳</span>
@@ -160,7 +171,7 @@
           </a>
         </section>
 
-        <section class="sidebar-card skills-card" aria-labelledby="skills-title">
+        <section class="sidebar-card skills-card" aria-labelledby="skills-title" data-aos="fade-left" data-aos-delay="80">
           <div class="sidebar-heading">
             <h2 id="skills-title">Kỹ năng</h2>
             <span aria-hidden="true">✳</span>
@@ -177,7 +188,7 @@
           </div>
         </section>
 
-        <section class="sidebar-card social-card" aria-labelledby="social-title">
+        <section class="sidebar-card social-card" aria-labelledby="social-title" data-aos="fade-left" data-aos-delay="160">
           <div class="sidebar-heading">
             <h2 id="social-title">Tìm mình ở đây</h2>
             <span aria-hidden="true">↗</span>
@@ -187,14 +198,32 @@
           <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
         </section>
 
-        <section class="sidebar-note">
+        <section class="sidebar-note" data-aos="fade-up">
           <span class="note-mark" aria-hidden="true">“</span>
           <p>Thiết kế không chỉ là thứ ta nhìn thấy. Đó là cách mọi thứ vận hành.</p>
           <span class="note-author">— Steve Jobs</span>
+          <div class="reaction-picker" role="group" aria-labelledby="reaction-title">
+            <p id="reaction-title">Bạn thấy portfolio thế nào?</p>
+            <div class="reaction-options">
+              <button class="reaction-button" type="button" aria-pressed="false" aria-label="Thích">
+                <span aria-hidden="true">💛</span>
+                <span>Thích</span>
+              </button>
+              <button class="reaction-button" type="button" aria-pressed="false" aria-label="Ấn tượng">
+                <span aria-hidden="true">✨</span>
+                <span>Ấn tượng</span>
+              </button>
+              <button class="reaction-button" type="button" aria-pressed="false" aria-label="Sáng tạo">
+                <span aria-hidden="true">🎨</span>
+                <span>Sáng tạo</span>
+              </button>
+            </div>
+            <p class="reaction-feedback" aria-live="polite"></p>
+          </div>
         </section>
       </aside>
 
-      <footer class="site-footer" id="contact">
+      <footer class="site-footer" id="contact" data-aos="fade-up">
         <div>
           <p class="eyebrow"><span class="eyebrow-line"></span> BẠN CÓ Ý TƯỞNG?</p>
           <h2>Cùng tạo nên<br>điều <span>đặc biệt.</span></h2>
