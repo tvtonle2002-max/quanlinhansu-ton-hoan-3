@@ -10,11 +10,18 @@
     <title>Nhân sự — Bảng điều khiển</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     >
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    >
     <link rel="stylesheet" href="styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script defer src="app.js"></script>
   </head>
   <body>
     <div class="app-shell">
@@ -78,6 +85,10 @@
         <header class="topbar">
           <div class="breadcrumbs"><span>Trang chủ</span><span aria-hidden="true">/</span><strong>Tổng quan</strong></div>
           <div class="topbar-actions">
+            <span class="sync-status" role="status" aria-label="Đang tải dữ liệu">
+              <span class="loading-spinner" aria-hidden="true"></span>
+              <span class="sync-label">Đang tải dữ liệu</span>
+            </span>
             <span class="today-label"><span aria-hidden="true">◷</span> Thứ Ba, 24 tháng 6, 2025</span>
             <a class="icon-button" href="#leave" aria-label="Thông báo">
               <span aria-hidden="true">♧</span><i></i>
@@ -87,16 +98,21 @@
         </header>
 
         <div class="page-content">
-          <section class="welcome-row" aria-labelledby="welcome-title">
+          <section class="welcome-row" aria-labelledby="welcome-title" data-aos="fade-up">
             <div>
               <p class="overline">THỨ BA, NGÀY 24 THÁNG 6, 2025</p>
               <h1 id="welcome-title">Chào buổi sáng, Linh <span aria-hidden="true">✦</span></h1>
               <p class="welcome-copy">Đây là tình hình nhân sự của công ty hôm nay.</p>
             </div>
-            <a class="primary-button" href="#employees"><span aria-hidden="true">＋</span> Thêm nhân viên</a>
+            <a
+              class="primary-button"
+              href="mailto:support@peoplehub.vn?subject=Tin%20nh%E1%BA%AFn%20t%E1%BB%AB%20PeopleHub"
+            >
+              <span aria-hidden="true">✉</span> Gửi tin nhắn
+            </a>
           </section>
 
-          <section class="stats-grid" aria-label="Chỉ số nhân sự tổng quan">
+          <section class="stats-grid" aria-label="Chỉ số nhân sự tổng quan" data-aos="fade-up">
             <article class="stat-card">
               <div class="stat-top">
                 <span class="stat-icon icon-lavender" aria-hidden="true">♙</span>
@@ -136,7 +152,7 @@
           </section>
 
           <div class="dashboard-grid">
-            <section class="panel attendance-panel" id="attendance" aria-labelledby="attendance-title">
+            <section class="panel attendance-panel" id="attendance" aria-labelledby="attendance-title" data-aos="fade-up">
               <div class="panel-heading">
                 <div>
                   <h2 id="attendance-title">Tổng quan chấm công</h2>
@@ -164,7 +180,7 @@
               </div>
             </section>
 
-            <section class="panel departments-panel" id="departments" aria-labelledby="departments-title">
+            <section class="panel departments-panel" id="departments" aria-labelledby="departments-title" data-aos="fade-up">
               <div class="panel-heading">
                 <div><h2 id="departments-title">Phòng ban</h2><p>Phân bổ nhân sự</p></div>
                 <a class="more-link" href="#departments" aria-label="Xem thêm phòng ban">···</a>
@@ -194,7 +210,7 @@
               </div>
             </section>
 
-            <section class="panel employees-panel" id="employees" aria-labelledby="employees-title">
+            <section class="panel employees-panel" id="employees" aria-labelledby="employees-title" data-aos="fade-up">
               <div class="panel-heading employee-heading">
                 <div><h2 id="employees-title">Nhân viên mới</h2><p>Chào đón những thành viên mới gia nhập</p></div>
                 <a class="secondary-button" href="#employees">Xem tất cả <span aria-hidden="true">→</span></a>
@@ -226,7 +242,7 @@
               </div>
             </section>
 
-            <section class="panel leave-panel" id="leave" aria-labelledby="leave-title">
+            <section class="panel leave-panel" id="leave" aria-labelledby="leave-title" data-aos="fade-up">
               <div class="panel-heading">
                 <div><h2 id="leave-title">Yêu cầu nghỉ phép</h2><p>Cần bạn xem xét</p></div>
                 <span class="request-count">03 mới</span>
