@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PeopleHub — Chấm công</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Thanh điều hướng">
+        <a class="brand" href="index.html" aria-label="PeopleHub, về tổng quan">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span>people<span>hub</span></span>
+        </a>
+
+        <div class="workspace">
+          <span class="workspace-icon" aria-hidden="true">N</span>
+          <span class="workspace-copy"><strong>Nova Creative</strong><small>Không gian làm việc</small></span>
+          <span class="chevron" aria-hidden="true">⌄</span>
+        </div>
+
+        <nav class="side-nav">
+          <p class="nav-label">MENU CHÍNH</p>
+          <a class="nav-link" href="index.html">
+            <span class="nav-icon" aria-hidden="true">▦</span>Tổng quan
+          </a>
+          <a class="nav-link" href="employees.html">
+            <span class="nav-icon" aria-hidden="true">♙</span>Nhân viên
+          </a>
+          <a class="nav-link is-active" href="attendance.html" aria-current="page">
+            <span class="nav-icon" aria-hidden="true">◷</span>Chấm công
+          </a>
+          <a class="nav-link" href="payroll.html">
+            <span class="nav-icon" aria-hidden="true">◫</span>Lương
+          </a>
+          <a class="nav-link" href="login.html">
+            <span class="nav-icon" aria-hidden="true">⇏</span>Đăng xuất
+          </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <div class="help-card">
+            <span class="help-sparkle" aria-hidden="true">✳</span>
+            <strong>Cần hỗ trợ?</strong>
+            <p>Đội ngũ của chúng tôi luôn sẵn sàng giúp bạn.</p>
+            <a href="mailto:support@peoplehub.vn">Liên hệ hỗ trợ <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="user-profile" href="index.html">
+            <span class="avatar avatar-violet">ML</span>
+            <span class="user-copy"><strong>Minh Linh</strong><small>Quản trị viên</small></span>
+            <span class="chevron" aria-hidden="true">···</span>
+          </a>
+        </div>
+      </aside>
+
+      <main class="main-area">
+        <header class="topbar">
+          <div class="breadcrumbs"><span>Trang chủ</span><span aria-hidden="true">/</span><strong>Chấm công</strong></div>
+          <div class="topbar-actions">
+            <span class="sync-status" role="status"><span class="loading-spinner" aria-hidden="true"></span><span class="sync-label">Đang đồng bộ</span></span>
+            <span class="today-label"><span aria-hidden="true">◷</span> Thứ Sáu, 28 tháng 6, 2025</span>
+            <a class="topbar-avatar avatar avatar-violet" href="index.html" aria-label="Hồ sơ Minh Linh">ML</a>
+          </div>
+        </header>
+
+        <div class="page-content">
+          <section class="page-hero" aria-labelledby="page-title">
+            <div>
+              <p class="overline">QUẢN LÝ THỜI GIAN</p>
+              <h1 id="page-title">Chấm công & nghỉ phép</h1>
+              <p class="page-subtitle">Theo dõi giờ vào ra, đi muộn, làm thêm giờ và đơn nghỉ phép.</p>
+            </div>
+            <div class="toolbar-actions">
+              <a class="action-button primary" href="#">+ Tạo đơn mới</a>
+            </div>
+          </section>
+
+          <section class="summary-row" aria-label="Tổng quan chấm công">
+            <article class="summary-card">
+              <div class="summary-label">Có mặt</div>
+              <div class="summary-number">216 <span>người</span></div>
+            </article>
+            <article class="summary-card">
+              <div class="summary-label">Làm từ xa</div>
+              <div class="summary-number">18 <span>7.2%</span></div>
+            </article>
+            <article class="summary-card">
+              <div class="summary-label">Đi muộn</div>
+              <div class="summary-number">09 <span>3.6%</span></div>
+            </article>
+            <article class="summary-card">
+              <div class="summary-label">Nghỉ phép</div>
+              <div class="summary-number">12 <span>đơn</span></div>
+            </article>
+          </section>
+
+          <section class="panel data-panel" aria-labelledby="attendance-table-title">
+            <div class="data-header">
+              <div>
+                <h2 id="attendance-table-title">Bảng chấm công tháng 6/2025</h2>
+                <p class="page-subtitle">Cập nhật từ thiết bị chấm công và mobile app</p>
+              </div>
+              <a class="secondary-button" href="#">Xuất báo cáo <span aria-hidden="true">→</span></a>
+            </div>
+
+            <div class="data-table-wrapper">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Nhân viên</th>
+                    <th>Ca làm</th>
+                    <th>Giờ vào</th>
+                    <th>Giờ ra</th>
+                    <th>OT</th>
+                    <th>Trạng thái</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><div class="employee-cell"><span class="avatar avatar-coral">HN</span><span><strong>Hoàng Ngọc</strong><small>Design</small></span></div></td>
+                    <td>Sáng</td>
+                    <td>08:30</td>
+                    <td>17:30</td>
+                    <td>1.5h</td>
+                    <td><span class="status-badge positive">Đúng giờ</span></td>
+                  </tr>
+                  <tr>
+                    <td><div class="employee-cell"><span class="avatar avatar-blue">TA</span><span><strong>Trần Anh</strong><small>Frontend</small></span></div></td>
+                    <td>Sáng</td>
+                    <td>08:48</td>
+                    <td>17:32</td>
+                    <td>0.5h</td>
+                    <td><span class="status-badge warning">Đi muộn</span></td>
+                  </tr>
+                  <tr>
+                    <td><div class="employee-cell"><span class="avatar avatar-yellow">LM</span><span><strong>Lê Minh</strong><small>Marketing</small></span></div></td>
+                    <td>Chiều</td>
+                    <td>09:00</td>
+                    <td>18:00</td>
+                    <td>0h</td>
+                    <td><span class="status-badge positive">Đúng giờ</span></td>
+                  </tr>
+                  <tr>
+                    <td><div class="employee-cell"><span class="avatar avatar-green">PT</span><span><strong>Phạm Thảo</strong><small>HR</small></span></div></td>
+                    <td>Sáng</td>
+                    <td>08:00</td>
+                    <td>17:00</td>
+                    <td>0h</td>
+                    <td><span class="status-badge positive">Đúng giờ</span></td>
+                  </tr>
+                  <tr>
+                    <td><div class="employee-cell"><span class="avatar avatar-violet">VL</span><span><strong>Vũ Lâm</strong><small>Ops</small></span></div></td>
+                    <td>Nghỉ phép</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>0h</td>
+                    <td><span class="status-badge neutral">Nghỉ phép</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

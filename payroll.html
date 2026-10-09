@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PeopleHub — Lương & Phúc lợi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Thanh điều hướng">
+        <a class="brand" href="index.html" aria-label="PeopleHub, về tổng quan">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span>people<span>hub</span></span>
+        </a>
+
+        <div class="workspace">
+          <span class="workspace-icon" aria-hidden="true">N</span>
+          <span class="workspace-copy"><strong>Nova Creative</strong><small>Không gian làm việc</small></span>
+          <span class="chevron" aria-hidden="true">⌄</span>
+        </div>
+
+        <nav class="side-nav">
+          <p class="nav-label">MENU CHÍNH</p>
+          <a class="nav-link" href="index.html">
+            <span class="nav-icon" aria-hidden="true">▦</span>Tổng quan
+          </a>
+          <a class="nav-link" href="employees.html">
+            <span class="nav-icon" aria-hidden="true">♙</span>Nhân viên
+          </a>
+          <a class="nav-link" href="attendance.html">
+            <span class="nav-icon" aria-hidden="true">◷</span>Chấm công
+          </a>
+          <a class="nav-link is-active" href="payroll.html" aria-current="page">
+            <span class="nav-icon" aria-hidden="true">◫</span>Lương
+          </a>
+          <a class="nav-link" href="login.html">
+            <span class="nav-icon" aria-hidden="true">⇏</span>Đăng xuất
+          </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <div class="help-card">
+            <span class="help-sparkle" aria-hidden="true">✳</span>
+            <strong>Cần hỗ trợ?</strong>
+            <p>Đội ngũ của chúng tôi luôn sẵn sàng giúp bạn.</p>
+            <a href="mailto:support@peoplehub.vn">Liên hệ hỗ trợ <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="user-profile" href="index.html">
+            <span class="avatar avatar-violet">ML</span>
+            <span class="user-copy"><strong>Minh Linh</strong><small>Quản trị viên</small></span>
+            <span class="chevron" aria-hidden="true">···</span>
+          </a>
+        </div>
+      </aside>
+
+      <main class="main-area">
+        <header class="topbar">
+          <div class="breadcrumbs"><span>Trang chủ</span><span aria-hidden="true">/</span><strong>Lương & Phúc lợi</strong></div>
+          <div class="topbar-actions">
+            <span class="sync-status" role="status"><span class="loading-spinner" aria-hidden="true"></span><span class="sync-label">Đang tính lương</span></span>
+            <span class="today-label"><span aria-hidden="true">◷</span> Thứ Hai, 01 tháng 7, 2025</span>
+            <a class="topbar-avatar avatar avatar-violet" href="index.html" aria-label="Hồ sơ Minh Linh">ML</a>
+          </div>
+        </header>
+
+        <div class="page-content">
+          <section class="page-hero" aria-labelledby="page-title">
+            <div>
+              <p class="overline">LƯƠNG & PHÚC LỢI</p>
+              <h1 id="page-title">Bảng lương nhân sự</h1>
+              <p class="page-subtitle">Theo dõi chi phí, khoản khấu trừ và phiếu lương cá nhân theo tháng.</p>
+            </div>
+            <div class="toolbar-actions">
+              <a class="action-button primary" href="#">+ Xuất phiếu lương</a>
+            </div>
+          </section>
+
+          <section class="summary-row" aria-label="Tổng quan lương">
+            <article class="summary-card">
+              <div class="summary-label">Tổng chi trả</div>
+              <div class="summary-number">₫ 1.36B <span>tháng 6</span></div>
+            </article>
+            <article class="summary-card">
+              <div class="summary-label">Bảo hiểm</div>
+              <div class="summary-number">₫ 168M <span>12.3%</span></div>
+            </article>
+            <article class="summary-card">
+              <div class="summary-label">Thuế TNCN</div>
+              <div class="summary-number">₫ 96M <span>7.1%</span></div>
+            </article>
+            <article class="summary-card">
+              <div class="summary-label">Đang chờ thanh toán</div>
+              <div class="summary-number">19 <span>người</span></div>
+            </article>
+          </section>
+
+          <section class="panel data-panel" aria-labelledby="payroll-table-title">
+            <div class="data-header">
+              <div>
+                <h2 id="payroll-table-title">Phiếu lương tháng 6/2025</h2>
+                <p class="page-subtitle">Bảng tính chi tiết từng cá nhân</p>
+              </div>
+              <a class="secondary-button" href="#">Xem chi tiết <span aria-hidden="true">→</span></a>
+            </div>
+
+            <div class="data-table-wrapper">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Nhân viên</th>
+                    <th>Lương cơ bản</th>
+                    <th>Phụ cấp</th>
+                    <th>BHXH/BHYT</th>
+                    <th>Thưởng</th>
+                    <th>Tổng nhận</th>
+                    <th>Trạng thái</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><div class="employee-cell"><span class="avatar avatar-coral">HN</span><span><strong>Hoàng Ngọc</strong><small>Design</small></span></div></td>
+                    <td>₫ 18.5M</td>
+                    <td>₫ 2.1M</td>
+                    <td>₫ 1.4M</td>
+                    <td>₫ 1.0M</td>
+                    <td>₫ 20.2M</td>
+                    <td><span class="status-badge positive">Đã thanh toán</span></td>
+                  </tr>
+                  <tr>
+                    <td><div class="employee-cell"><span class="avatar avatar-blue">TA</span><span><strong>Trần Anh</strong><small>Frontend</small></span></div></td>
+                    <td>₫ 22.0M</td>
+                    <td>₫ 2.8M</td>
+                    <td>₫ 1.7M</td>
+                    <td>₫ 1.5M</td>
+                    <td>₫ 24.6M</td>
+                    <td><span class="status-badge positive">Đã thanh toán</span></td>
+                  </tr>
+                  <tr>
+                    <td><div class="employee-cell"><span class="avatar avatar-yellow">LM</span><span><strong>Lê Minh</strong><small>Marketing</small></span></div></td>
+                    <td>₫ 16.0M</td>
+                    <td>₫ 1.9M</td>
+                    <td>₫ 1.2M</td>
+                    <td>₫ 0.6M</td>
+                    <td>₫ 17.3M</td>
+                    <td><span class="status-badge warning">Chờ duyệt</span></td>
+                  </tr>
+                  <tr>
+                    <td><div class="employee-cell"><span class="avatar avatar-green">PT</span><span><strong>Phạm Thảo</strong><small>HR</small></span></div></td>
+                    <td>₫ 17.8M</td>
+                    <td>₫ 2.3M</td>
+                    <td>₫ 1.3M</td>
+                    <td>₫ 0.9M</td>
+                    <td>₫ 19.7M</td>
+                    <td><span class="status-badge positive">Đã thanh toán</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

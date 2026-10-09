@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PeopleHub — Nhân viên</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Thanh điều hướng">
+        <a class="brand" href="index.html" aria-label="PeopleHub, về tổng quan">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span>people<span>hub</span></span>
+        </a>
+
+        <div class="workspace">
+          <span class="workspace-icon" aria-hidden="true">N</span>
+          <span class="workspace-copy"><strong>Nova Creative</strong><small>Không gian làm việc</small></span>
+          <span class="chevron" aria-hidden="true">⌄</span>
+        </div>
+
+        <nav class="side-nav">
+          <p class="nav-label">MENU CHÍNH</p>
+          <a class="nav-link" href="index.html">
+            <span class="nav-icon" aria-hidden="true">▦</span>Tổng quan
+          </a>
+          <a class="nav-link is-active" href="employees.html" aria-current="page">
+            <span class="nav-icon" aria-hidden="true">♙</span>Nhân viên
+            <span class="nav-badge">48</span>
+          </a>
+          <a class="nav-link" href="attendance.html">
+            <span class="nav-icon" aria-hidden="true">◷</span>Chấm công
+          </a>
+          <a class="nav-link" href="payroll.html">
+            <span class="nav-icon" aria-hidden="true">◫</span>Lương
+          </a>
+          <a class="nav-link" href="login.html">
+            <span class="nav-icon" aria-hidden="true">⇏</span>Đăng xuất
+          </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <div class="help-card">
+            <span class="help-sparkle" aria-hidden="true">✳</span>
+            <strong>Cần hỗ trợ?</strong>
+            <p>Đội ngũ của chúng tôi luôn sẵn sàng giúp bạn.</p>
+            <a href="mailto:support@peoplehub.vn">Liên hệ hỗ trợ <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="user-profile" href="index.html">
+            <span class="avatar avatar-violet">ML</span>
+            <span class="user-copy"><strong>Minh Linh</strong><small>Quản trị viên</small></span>
+            <span class="chevron" aria-hidden="true">···</span>
+          </a>
+        </div>
+      </aside>
+
+      <main class="main-area">
+        <header class="topbar">
+          <div class="breadcrumbs"><span>Trang chủ</span><span aria-hidden="true">/</span><strong>Nhân viên</strong></div>
+          <div class="topbar-actions">
+            <span class="sync-status" role="status"><span class="loading-spinner" aria-hidden="true"></span><span class="sync-label">Đang đồng bộ</span></span>
+            <span class="today-label"><span aria-hidden="true">◷</span> Thứ Năm, 27 tháng 6, 2025</span>
+            <a class="topbar-avatar avatar avatar-violet" href="index.html" aria-label="Hồ sơ Minh Linh">ML</a>
+          </div>
+        </header>
+
+        <div class="page-content">
+          <section class="page-hero" aria-labelledby="page-title">
+            <div>
+              <p class="overline">QUẢN LÝ HỒ SƠ NHÂN SỰ</p>
+              <h1 id="page-title">Danh sách nhân viên</h1>
+              <p class="page-subtitle">Theo dõi tình trạng, vị trí và quá trình làm việc của toàn bộ nhân sự.</p>
+            </div>
+            <div class="toolbar-actions">
+              <a class="action-button primary" href="#">+ Thêm nhân viên</a>
+            </div>
+          </section>
+
+          <div class="page-toolbar">
+            <div class="toolbar-actions">
+              <span class="filter-chip">Tất cả phòng ban</span>
+              <span class="filter-chip">Tất cả trạng thái</span>
+              <span class="filter-chip">Tất cả vị trí</span>
+            </div>
+            <div class="toolbar-actions">
+              <span class="action-button">Xuất Excel</span>
+              <span class="action-button">Tìm kiếm</span>
+            </div>
+          </div>
+
+          <section class="summary-row" aria-label="Tổng quan nhân viên">
+            <article class="summary-card">
+              <div class="summary-label">Tổng nhân viên</div>
+              <div class="summary-number">248 <span>người</span></div>
+            </article>
+            <article class="summary-card">
+              <div class="summary-label">Đang làm việc</div>
+              <div class="summary-number">231 <span>93.1%</span></div>
+            </article>
+            <article class="summary-card">
+              <div class="summary-label">Đang thử việc</div>
+              <div class="summary-number">11 <span>4.4%</span></div>
+            </article>
+            <article class="summary-card">
+              <div class="summary-label">Nghỉ phép</div>
+              <div class="summary-number">12 <span>5.2%</span></div>
+            </article>
+          </section>
+
+          <section class="panel data-panel" aria-labelledby="employees-table-title">
+            <div class="data-header">
+              <div>
+                <h2 id="employees-table-title">Nhân sự mới & hiện tại</h2>
+                <p class="page-subtitle">Dữ liệu cập nhật theo thời gian thực</p>
+              </div>
+              <a class="secondary-button" href="#">Tải về <span aria-hidden="true">→</span></a>
+            </div>
+
+            <div class="data-table-wrapper">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Nhân viên</th>
+                    <th>Chức vụ</th>
+                    <th>Phòng ban</th>
+                    <th>Ngày bắt đầu</th>
+                    <th>Trạng thái</th>
+                    <th>Quản lý</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><div class="employee-cell"><span class="avatar avatar-coral">HN</span><span><strong>Hoàng Ngọc</strong><small>ngoc.hoang@nova.vn</small></span></div></td>
+                    <td>Product Designer</td>
+                    <td>Thiết kế</td>
+                    <td>24/06/2025</td>
+                    <td><span class="status-badge positive">Đang làm việc</span></td>
+                    <td><a class="table-link" href="#">Nhật Linh</a></td>
+                  </tr>
+                  <tr>
+                    <td><div class="employee-cell"><span class="avatar avatar-blue">TA</span><span><strong>Trần Anh</strong><small>anh.tran@nova.vn</small></span></div></td>
+                    <td>Frontend Developer</td>
+                    <td>Công nghệ</td>
+                    <td>20/06/2025</td>
+                    <td><span class="status-badge positive">Đang làm việc</span></td>
+                    <td><a class="table-link" href="#">Phúc Anh</a></td>
+                  </tr>
+                  <tr>
+                    <td><div class="employee-cell"><span class="avatar avatar-yellow">LM</span><span><strong>Lê Minh</strong><small>minh.le@nova.vn</small></span></div></td>
+                    <td>Content Executive</td>
+                    <td>Marketing</td>
+                    <td>18/06/2025</td>
+                    <td><span class="status-badge warning">Đang hội nhập</span></td>
+                    <td><a class="table-link" href="#">Minh Châu</a></td>
+                  </tr>
+                  <tr>
+                    <td><div class="employee-cell"><span class="avatar avatar-green">PT</span><span><strong>Phạm Thảo</strong><small>thao.pham@nova.vn</small></span></div></td>
+                    <td>Talent Acquisition</td>
+                    <td>Nhân sự</td>
+                    <td>16/06/2025</td>
+                    <td><span class="status-badge positive">Đang làm việc</span></td>
+                    <td><a class="table-link" href="#">Huy Dũng</a></td>
+                  </tr>
+                  <tr>
+                    <td><div class="employee-cell"><span class="avatar avatar-violet">VL</span><span><strong>Vũ Lâm</strong><small>lam.vu@nova.vn</small></span></div></td>
+                    <td>Operations Lead</td>
+                    <td>Vận hành</td>
+                    <td>12/06/2025</td>
+                    <td><span class="status-badge neutral">Đang nghỉ phép</span></td>
+                    <td><a class="table-link" href="#">Thu Hà</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
