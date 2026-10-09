@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PeopleHub — Đăng nhập</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="auth-layout">
+      <section class="auth-visual" aria-label="Tổng quan hệ thống nhân sự">
+        <div class="auth-visual-inner">
+          <div class="auth-brand" aria-label="PeopleHub brand">
+            <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span>people<span>hub</span></span>
+          </div>
+
+          <div class="auth-hero-panel">
+            <p class="overline">HỆ THỐNG NHÂN SỰ THÔNG MINH</p>
+            <h1>Quản lý nhân sự hiệu quả hơn mỗi ngày.</h1>
+            <p>
+              Theo dõi nhân sự, hồ sơ, chấm công, nghỉ phép, lương và hiệu suất trong một hệ thống thống nhất.
+            </p>
+          </div>
+
+          <div class="auth-metrics" aria-label="Số liệu hệ thống">
+            <div class="auth-metric">
+              <strong>248</strong>
+              <span>Nhân viên</span>
+            </div>
+            <div class="auth-metric">
+              <strong>96%</strong>
+              <span>Đúng giờ</span>
+            </div>
+            <div class="auth-metric">
+              <strong>12</strong>
+              <span>Đơn chờ duyệt</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="auth-panel" aria-label="Màn hình đăng nhập">
+        <div class="login-card">
+          <h2>Đăng nhập</h2>
+          <p>Chào mừng bạn quay lại, vui lòng nhập thông tin tài khoản.</p>
+
+          <form>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input id="email" type="email" value="linh.minh@peoplehub.vn" aria-label="Email">
+            </div>
+
+            <div class="form-field">
+              <label for="password">Mật khẩu</label>
+              <input id="password" type="password" value="••••••••" aria-label="Mật khẩu">
+            </div>
+
+            <div class="form-row">
+              <label class="checkbox">
+                <input type="checkbox" checked>
+                <span>Ghi nhớ đăng nhập</span>
+              </label>
+              <a href="#">Quên mật khẩu?</a>
+            </div>
+
+            <button class="login-button" type="button" onclick="window.location.href='index.html'">Đăng nhập</button>
+
+            <div class="login-meta">
+              Chưa có tài khoản? <a href="#">Liên hệ quản trị</a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

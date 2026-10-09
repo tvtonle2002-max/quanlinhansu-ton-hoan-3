@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Portfolio cá nhân của Minh Anh — nhà thiết kế và phát triển giao diện số."
+      content="Bảng điều khiển quản lý nhân sự tổng quan: nhân viên, phòng ban, chấm công và hoạt động."
     >
-    <title>Minh Anh — Portfolio</title>
+    <title>Nhân sự — Bảng điều khiển</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     >
     <link
@@ -24,218 +24,394 @@
     <script defer src="app.js"></script>
   </head>
   <body>
-    <div class="loading-screen" role="status" aria-label="Đang tải trang">
-      <span class="loading-spinner" aria-hidden="true"></span>
-      <span>Đang tải trải nghiệm...</span>
-    </div>
-    <div class="portfolio">
-      <header class="site-header" data-aos="fade-down">
-        <a class="brand" href="#home" aria-label="Minh Anh, về đầu trang">
-          <span class="brand-mark">MA</span>
-          <span>minhanh<span class="brand-dot">.</span></span>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Thanh điều hướng">
+        <a class="brand" href="#overview" aria-label="PeopleHub, về tổng quan">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span>people<span>hub</span></span>
         </a>
-        <nav class="main-nav" aria-label="Điều hướng chính">
-          <a href="#about">Giới thiệu</a>
-          <a href="#work">Dự án</a>
-          <a href="#contact">Liên hệ</a>
-        </nav>
-        <a class="availability" href="#contact">
-          <span class="status-dot" aria-hidden="true"></span>
-          Sẵn sàng cho dự án mới
-        </a>
-      </header>
 
-      <main class="main-content" id="home">
-        <section class="hero panel" aria-labelledby="hero-title" data-aos="fade-up">
-          <div class="hero-copy">
-            <p class="eyebrow"><span class="eyebrow-line"></span> PORTFOLIO · 2025</p>
-            <h1 id="hero-title">Xin chào, mình là<br><span>Minh Anh.</span></h1>
-            <p class="hero-description">
-              Mình thiết kế và xây dựng những trải nghiệm số tinh tế, hữu ích
-              và dễ dàng ghi nhớ.
-            </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#work">
-                Khám phá dự án <span aria-hidden="true">↗</span>
-              </a>
-              <a class="text-link" href="#contact">Kết nối với mình <span aria-hidden="true">→</span></a>
-            </div>
-          </div>
-          <div class="hero-art" aria-label="Minh họa sáng tạo với hình khối trừu tượng" role="img">
-            <div class="art-orbit orbit-one"></div>
-            <div class="art-orbit orbit-two"></div>
-            <div class="art-sun"></div>
-            <div class="art-card">
-              <span class="art-card-label">DESIGN<br>WITH INTENT</span>
-              <span class="art-card-star" aria-hidden="true">✳</span>
-            </div>
-            <span class="art-caption">CREATIVE<br>BY NATURE</span>
-            <span class="art-index">01 — 04</span>
-          </div>
-        </section>
+        <div class="workspace">
+          <span class="workspace-icon" aria-hidden="true">N</span>
+          <span class="workspace-copy"><strong>Nova Creative</strong><small>Không gian làm việc</small></span>
+          <span class="chevron" aria-hidden="true">⌄</span>
+        </div>
 
-        <section class="work-section" id="work" aria-labelledby="work-title" data-aos="fade-up">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow"><span class="eyebrow-line"></span> TUYỂN CHỌN</p>
-              <h2 id="work-title">Dự án nổi bật</h2>
-            </div>
-            <span class="section-count">01 / 03</span>
-          </div>
-          <div class="project-list">
-            <article class="project-card project-coral" data-aos="fade-up" data-aos-delay="0">
-              <div class="project-visual visual-orbit" aria-hidden="true">
-                <span class="visual-label">nếp sống<br>mới</span>
-                <span class="visual-ring"></span>
-                <span class="visual-sphere"></span>
-              </div>
-              <div class="project-info">
-                <div>
-                  <p class="project-type">SẢN PHẨM SỐ · 2025</p>
-                  <h3>Nếp — sống chậm, sống xanh</h3>
-                  <p>Ứng dụng giúp hình thành thói quen bền vững mỗi ngày.</p>
-                </div>
-                <a class="project-link" href="#contact" aria-label="Tìm hiểu dự án Nếp">↗</a>
-              </div>
-            </article>
-            <article class="project-card project-lilac" data-aos="fade-up" data-aos-delay="80">
-              <div class="project-visual visual-editorial" aria-hidden="true">
-                <span class="editorial-top">STUDIO / 2025</span>
-                <span class="editorial-word">FORM<br>& FEEL</span>
-                <span class="editorial-bottom">DESIGN FOR EVERYDAY</span>
-              </div>
-              <div class="project-info">
-                <div>
-                  <p class="project-type">NHẬN DIỆN THƯƠNG HIỆU · 2024</p>
-                  <h3>Form & Feel Studio</h3>
-                  <p>Hệ thống nhận diện cho một không gian sáng tạo độc lập.</p>
-                </div>
-                <a class="project-link" href="#contact" aria-label="Tìm hiểu dự án Form and Feel">↗</a>
-              </div>
-            </article>
-            <article class="project-card project-yellow" data-aos="fade-up" data-aos-delay="160">
-              <div class="project-visual visual-commerce" aria-hidden="true">
-                <span class="commerce-sticker">good<br>things<br>inside</span>
-                <span class="commerce-box"></span>
-                <span class="commerce-flower">✳</span>
-              </div>
-              <div class="project-info">
-                <div>
-                  <p class="project-type">THƯƠNG MẠI ĐIỆN TỬ · 2024</p>
-                  <h3>Nhà Mơ Market</h3>
-                  <p>Trải nghiệm mua sắm trực tuyến cho sản phẩm thủ công Việt.</p>
-                </div>
-                <a class="project-link" href="#contact" aria-label="Tìm hiểu dự án Nhà Mơ Market">↗</a>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section class="about-section panel" id="about" aria-labelledby="about-title" data-aos="fade-up">
-          <div>
-            <p class="eyebrow"><span class="eyebrow-line"></span> MỘT CHÚT VỀ MÌNH</p>
-            <h2 id="about-title">Ý tưởng tốt bắt đầu từ sự tò mò.</h2>
-          </div>
-          <div class="about-copy">
-            <p>
-              Mình là designer & front-end developer tại TP. Hồ Chí Minh. Mình
-              yêu những chi tiết nhỏ, tư duy rõ ràng và những sản phẩm khiến
-              cuộc sống thường ngày tốt hơn một chút.
-            </p>
-            <a class="text-link" href="#contact">Câu chuyện của mình <span aria-hidden="true">→</span></a>
-          </div>
-        </section>
-      </main>
-
-      <aside class="sidebar" aria-label="Thông tin cá nhân">
-        <section class="sidebar-card profile-card" data-aos="fade-left">
-          <div class="profile-top">
-            <span class="profile-label">HELLO, THERE!</span>
-            <span class="profile-sparkle" aria-hidden="true">✳</span>
-          </div>
-          <div class="avatar" role="img" aria-label="Hình đại diện minh họa">MA</div>
-          <h2>Minh Anh</h2>
-          <p class="profile-role">Designer & Front-end Developer</p>
-          <p class="profile-location"><span aria-hidden="true">⌖</span> TP. Hồ Chí Minh, Việt Nam</p>
-          <div class="profile-divider"></div>
-          <div class="profile-stat">
-            <span>KINH NGHIỆM</span>
-            <strong>04+ năm</strong>
-          </div>
-          <div class="profile-stat">
-            <span>DỰ ÁN ĐÃ LÀM</span>
-            <strong>28 dự án</strong>
-          </div>
-          <a class="button button-dark" href="mailto:hello@minhanh.design">
-            <span>hello@minhanh.design</span><span aria-hidden="true">↗</span>
+        <nav class="side-nav">
+          <p class="nav-label">MENU CHÍNH</p>
+          <a class="nav-link is-active" href="index.html" aria-current="page">
+            <span class="nav-icon" aria-hidden="true">▦</span>Tổng quan
           </a>
-        </section>
+          <a class="nav-link" href="employees.html">
+            <span class="nav-icon" aria-hidden="true">♙</span>Nhân viên
+            <span class="nav-badge">48</span>
+          </a>
+          <a class="nav-link" href="attendance.html">
+            <span class="nav-icon" aria-hidden="true">◷</span>Chấm công
+          </a>
+          <a class="nav-link" href="payroll.html">
+            <span class="nav-icon" aria-hidden="true">◫</span>Lương
+          </a>
+          <a class="nav-link" href="login.html">
+            <span class="nav-icon" aria-hidden="true">⇏</span>Đăng xuất
+          </a>
 
-        <section class="sidebar-card skills-card" aria-labelledby="skills-title" data-aos="fade-left" data-aos-delay="80">
-          <div class="sidebar-heading">
-            <h2 id="skills-title">Kỹ năng</h2>
-            <span aria-hidden="true">✳</span>
-          </div>
-          <div class="skills-list">
-            <span class="skill-tag">UI/UX Design</span>
-            <span class="skill-tag">Figma</span>
-            <span class="skill-tag">HTML & CSS</span>
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">Design System</span>
-            <span class="skill-tag">Prototyping</span>
-            <span class="skill-tag">Branding</span>
-          </div>
-        </section>
+          <p class="nav-label nav-label-spaced">KHÁC</p>
+          <a class="nav-link" href="index.html#overview">
+            <span class="nav-icon" aria-hidden="true">▥</span>Báo cáo
+          </a>
+          <a class="nav-link" href="index.html#overview">
+            <span class="nav-icon" aria-hidden="true">⚙</span>Cài đặt
+          </a>
+        </nav>
 
-        <section class="sidebar-card social-card" aria-labelledby="social-title" data-aos="fade-left" data-aos-delay="160">
-          <div class="sidebar-heading">
-            <h2 id="social-title">Tìm mình ở đây</h2>
-            <span aria-hidden="true">↗</span>
+        <div class="sidebar-bottom">
+          <div class="help-card">
+            <span class="help-sparkle" aria-hidden="true">✳</span>
+            <strong>Cần hỗ trợ?</strong>
+            <p>Đội ngũ của chúng tôi luôn sẵn sàng giúp bạn.</p>
+            <a href="mailto:support@peoplehub.vn">Liên hệ hỗ trợ <span aria-hidden="true">↗</span></a>
           </div>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
-          <a href="https://www.behance.net/" target="_blank" rel="noreferrer">Behance <span>↗</span></a>
-          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
-        </section>
-
-        <section class="sidebar-note" data-aos="fade-up">
-          <span class="note-mark" aria-hidden="true">“</span>
-          <p>Thiết kế không chỉ là thứ ta nhìn thấy. Đó là cách mọi thứ vận hành.</p>
-          <span class="note-author">— Steve Jobs</span>
-          <div class="reaction-picker" role="group" aria-labelledby="reaction-title">
-            <p id="reaction-title">Bạn thấy portfolio thế nào?</p>
-            <div class="reaction-options">
-              <button class="reaction-button" type="button" aria-pressed="false" aria-label="Thích">
-                <span aria-hidden="true">💛</span>
-                <span>Thích</span>
-              </button>
-              <button class="reaction-button" type="button" aria-pressed="false" aria-label="Ấn tượng">
-                <span aria-hidden="true">✨</span>
-                <span>Ấn tượng</span>
-              </button>
-              <button class="reaction-button" type="button" aria-pressed="false" aria-label="Sáng tạo">
-                <span aria-hidden="true">🎨</span>
-                <span>Sáng tạo</span>
-              </button>
-            </div>
-            <p class="reaction-feedback" aria-live="polite"></p>
-          </div>
-        </section>
+          <a class="user-profile" href="#overview">
+            <span class="avatar avatar-violet">ML</span>
+            <span class="user-copy"><strong>Minh Linh</strong><small>Quản trị viên</small></span>
+            <span class="chevron" aria-hidden="true">···</span>
+          </a>
+        </div>
       </aside>
 
-      <footer class="site-footer" id="contact" data-aos="fade-up">
-        <div>
-          <p class="eyebrow"><span class="eyebrow-line"></span> BẠN CÓ Ý TƯỞNG?</p>
-          <h2>Cùng tạo nên<br>điều <span>đặc biệt.</span></h2>
+      <main class="main-area" id="overview">
+        <header class="topbar">
+          <div class="breadcrumbs"><span>Trang chủ</span><span aria-hidden="true">/</span><strong>Tổng quan</strong></div>
+          <div class="topbar-actions">
+            <span class="sync-status" role="status" aria-label="Đang tải dữ liệu">
+              <span class="loading-spinner" aria-hidden="true"></span>
+              <span class="sync-label">Đang tải dữ liệu</span>
+            </span>
+            <span class="today-label"><span aria-hidden="true">◷</span> Thứ Ba, 24 tháng 6, 2025</span>
+            <a class="icon-button" href="#leave" aria-label="Thông báo">
+              <span aria-hidden="true">♧</span><i></i>
+            </a>
+            <a class="topbar-avatar avatar avatar-violet" href="#overview" aria-label="Hồ sơ Minh Linh">ML</a>
+          </div>
+        </header>
+
+        <div class="page-content">
+          <section class="welcome-row" aria-labelledby="welcome-title" data-aos="fade-up">
+            <div>
+              <p class="overline">THỨ BA, NGÀY 24 THÁNG 6, 2025</p>
+              <h1 id="welcome-title">Chào buổi sáng, Linh <span aria-hidden="true">✦</span></h1>
+              <p class="welcome-copy">Đây là tình hình nhân sự của công ty hôm nay.</p>
+            </div>
+            <a
+              class="primary-button"
+              href="mailto:support@peoplehub.vn?subject=Tin%20nh%E1%BA%AFn%20t%E1%BB%AB%20PeopleHub"
+            >
+              <span aria-hidden="true">✉</span> Gửi tin nhắn
+            </a>
+          </section>
+
+          <section class="stats-grid" aria-label="Chỉ số nhân sự tổng quan" data-aos="fade-up">
+            <article class="stat-card">
+              <div class="stat-top">
+                <span class="stat-icon icon-lavender" aria-hidden="true">♙</span>
+                <span class="stat-change positive">↗ 12,5%</span>
+              </div>
+              <p class="stat-label">Tổng nhân viên</p>
+              <div class="stat-value-row"><strong class="stat-value">248</strong><span class="stat-caption">so với tháng trước</span></div>
+              <div class="mini-bars" aria-hidden="true"><i style="--bar: 35%"></i><i style="--bar: 48%"></i><i style="--bar: 41%"></i><i style="--bar: 62%"></i><i style="--bar: 54%"></i><i style="--bar: 76%"></i><i style="--bar: 68%"></i><i style="--bar: 92%"></i></div>
+            </article>
+            <article class="stat-card">
+              <div class="stat-top">
+                <span class="stat-icon icon-mint" aria-hidden="true">◉</span>
+                <span class="stat-change positive">↗ 4,2%</span>
+              </div>
+              <p class="stat-label">Đang làm việc</p>
+              <div class="stat-value-row"><strong class="stat-value">231</strong><span class="stat-caption">93,1% tổng nhân sự</span></div>
+              <div class="progress-track"><span class="progress-fill fill-green" style="width: 93.1%"></span></div>
+            </article>
+            <article class="stat-card">
+              <div class="stat-top">
+                <span class="stat-icon icon-peach" aria-hidden="true">♧</span>
+                <span class="stat-change negative">↘ 2,1%</span>
+              </div>
+              <p class="stat-label">Đang nghỉ phép</p>
+              <div class="stat-value-row"><strong class="stat-value">12</strong><span class="stat-caption">5,2% tổng nhân sự</span></div>
+              <div class="progress-track"><span class="progress-fill fill-orange" style="width: 22%"></span></div>
+            </article>
+            <article class="stat-card">
+              <div class="stat-top">
+                <span class="stat-icon icon-blue" aria-hidden="true">⌖</span>
+                <span class="stat-change neutral">Tháng này</span>
+              </div>
+              <p class="stat-label">Vị trí đang tuyển</p>
+              <div class="stat-value-row"><strong class="stat-value">05</strong><span class="stat-caption">3 phòng ban</span></div>
+              <div class="progress-track"><span class="progress-fill fill-blue" style="width: 55%"></span></div>
+            </article>
+          </section>
+
+          <section class="feature-strip" aria-labelledby="feature-title" data-aos="fade-up">
+            <div class="section-header">
+              <div>
+                <p class="overline">HỆ THỐNG QUẢN LÝ NHÂN SỰ</p>
+                <h2 id="feature-title">Các phân hệ chính</h2>
+              </div>
+              <a class="secondary-button" href="#employees">Xem toàn bộ <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="module-grid">
+              <article class="module-card">
+                <span class="module-icon icon-lavender" aria-hidden="true">🔐</span>
+                <h3>Đăng nhập & phân quyền</h3>
+                <ul>
+                  <li>SSO / 2FA / mật khẩu</li>
+                  <li>Vai trò Admin / HR / Manager</li>
+                  <li>Audit log hoạt động</li>
+                </ul>
+              </article>
+              <article class="module-card">
+                <span class="module-icon icon-mint" aria-hidden="true">👥</span>
+                <h3>Quản lý hồ sơ nhân sự</h3>
+                <ul>
+                  <li>Danh bạ nhân viên</li>
+                  <li>Hồ sơ cá nhân & hợp đồng</li>
+                  <li>Thăng chức / điều chuyển</li>
+                </ul>
+              </article>
+              <article class="module-card">
+                <span class="module-icon icon-peach" aria-hidden="true">🕒</span>
+                <h3>Chấm công & nghỉ phép</h3>
+                <ul>
+                  <li>Chấm công theo ca</li>
+                  <li>Đơn nghỉ phép & phê duyệt</li>
+                  <li>Đi muộn / về sớm / OT</li>
+                </ul>
+              </article>
+              <article class="module-card">
+                <span class="module-icon icon-blue" aria-hidden="true">💰</span>
+                <h3>Lương & phúc lợi</h3>
+                <ul>
+                  <li>Quy tắc tính lương</li>
+                  <li>Phiếu lương điện tử</li>
+                  <li>Bảo hiểm & khám sức khỏe</li>
+                </ul>
+              </article>
+              <article class="module-card">
+                <span class="module-icon icon-rose" aria-hidden="true">🎯</span>
+                <h3>Tuyển dụng</h3>
+                <ul>
+                  <li>Đăng tin tuyển dụng</li>
+                  <li>Pipeline ứng viên</li>
+                  <li>Đánh giá & Offer</li>
+                </ul>
+              </article>
+              <article class="module-card">
+                <span class="module-icon icon-gold" aria-hidden="true">📚</span>
+                <h3>Đào tạo & phát triển</h3>
+                <ul>
+                  <li>Onboarding checklist</li>
+                  <li>Khóa học nội bộ</li>
+                  <li>Chứng chỉ & đánh giá</li>
+                </ul>
+              </article>
+              <article class="module-card">
+                <span class="module-icon icon-purple" aria-hidden="true">📈</span>
+                <h3>Đánh giá hiệu suất</h3>
+                <ul>
+                  <li>KPIs / OKRs</li>
+                  <li>360° review</li>
+                  <li>Lịch sử xếp loại</li>
+                </ul>
+              </article>
+              <article class="module-card">
+                <span class="module-icon icon-slate" aria-hidden="true">⚙️</span>
+                <h3>Cài đặt hệ thống</h3>
+                <ul>
+                  <li>Danh mục chung</li>
+                  <li>Phân quyền</li>
+                  <li>Thiết lập lịch nghỉ</li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          <section class="info-grid" aria-label="Thông tin và lịch công ty" data-aos="fade-up">
+            <article class="panel announcements-panel">
+              <div class="panel-heading">
+                <div>
+                  <h2>Thông báo nội bộ</h2>
+                  <p>Cập nhật mới nhất từ công ty</p>
+                </div>
+                <a class="more-link" href="#overview" aria-label="Xem thêm thông báo">···</a>
+              </div>
+              <div class="announcement-list">
+                <div class="announcement-item">
+                  <span class="announcement-tag tag-purple">HR</span>
+                  <div>
+                    <strong>Chương trình onboarding tháng 7</strong>
+                    <small>Đăng ngày 18/06 • 14:30</small>
+                  </div>
+                </div>
+                <div class="announcement-item">
+                  <span class="announcement-tag tag-green">Công ty</span>
+                  <div>
+                    <strong>Lịch nghỉ lễ Quốc khánh 2025</strong>
+                    <small>Đăng ngày 16/06 • 09:15</small>
+                  </div>
+                </div>
+                <div class="announcement-item">
+                  <span class="announcement-tag tag-orange">Đào tạo</span>
+                  <div>
+                    <strong>Khóa học kỹ năng lãnh đạo mở đăng ký</strong>
+                    <small>Đăng ngày 14/06 • 16:45</small>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel calendar-panel">
+              <div class="panel-heading">
+                <div>
+                  <h2>Lịch công ty</h2>
+                  <p>Sự kiện & ngày quan trọng</p>
+                </div>
+                <a class="secondary-button small-button" href="#overview">Xem lịch</a>
+              </div>
+              <div class="event-list">
+                <div class="event-item">
+                  <div class="event-date"><strong>24</strong><span>Th6</span></div>
+                  <div class="event-copy"><strong>Phỏng vấn nhân sự</strong><small>3 ứng viên • 09:00</small></div>
+                </div>
+                <div class="event-item">
+                  <div class="event-date"><strong>26</strong><span>Th6</span></div>
+                  <div class="event-copy"><strong>Team building nội bộ</strong><small>Ban điều hành • 15:30</small></div>
+                </div>
+                <div class="event-item">
+                  <div class="event-date"><strong>02</strong><span>Th7</span></div>
+                  <div class="event-copy"><strong>Sinh nhật nhân viên</strong><small>8 thành viên • Cả ngày</small></div>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <div class="dashboard-grid">
+            <section class="panel attendance-panel" id="attendance" aria-labelledby="attendance-title" data-aos="fade-up">
+              <div class="panel-heading">
+                <div>
+                  <h2 id="attendance-title">Tổng quan chấm công</h2>
+                  <p>Số lượng nhân viên trong tuần này</p>
+                </div>
+                <a class="select-control" href="#attendance">Tuần này <span aria-hidden="true">⌄</span></a>
+              </div>
+              <div class="chart-legend">
+                <span><i class="legend-dot legend-present"></i>Có mặt</span>
+                <span><i class="legend-dot legend-remote"></i>Làm từ xa</span>
+                <span><i class="legend-dot legend-absent"></i>Nghỉ phép</span>
+              </div>
+              <div class="chart" role="img" aria-label="Biểu đồ cột chấm công từ thứ Hai đến thứ Sáu">
+                <div class="chart-y-labels" aria-hidden="true"><span>250</span><span>200</span><span>150</span><span>100</span><span>50</span><span>0</span></div>
+                <div class="chart-plot">
+                  <div class="chart-grid-lines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                  <div class="bar-groups">
+                    <div class="bar-group"><div class="bar-stack"><i class="bar-present" style="height: 67%"></i><i class="bar-remote" style="height: 14%"></i><i class="bar-absent" style="height: 7%"></i></div><span>Thứ Hai</span></div>
+                    <div class="bar-group"><div class="bar-stack"><i class="bar-present" style="height: 72%"></i><i class="bar-remote" style="height: 12%"></i><i class="bar-absent" style="height: 5%"></i></div><span>Thứ Ba</span></div>
+                    <div class="bar-group"><div class="bar-stack"><i class="bar-present" style="height: 63%"></i><i class="bar-remote" style="height: 16%"></i><i class="bar-absent" style="height: 9%"></i></div><span>Thứ Tư</span></div>
+                    <div class="bar-group"><div class="bar-stack"><i class="bar-present" style="height: 75%"></i><i class="bar-remote" style="height: 11%"></i><i class="bar-absent" style="height: 6%"></i></div><span>Thứ Năm</span></div>
+                    <div class="bar-group"><div class="bar-stack"><i class="bar-present" style="height: 69%"></i><i class="bar-remote" style="height: 14%"></i><i class="bar-absent" style="height: 8%"></i></div><span>Thứ Sáu</span></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="panel departments-panel" id="departments" aria-labelledby="departments-title" data-aos="fade-up">
+              <div class="panel-heading">
+                <div><h2 id="departments-title">Phòng ban</h2><p>Phân bổ nhân sự</p></div>
+                <a class="more-link" href="#departments" aria-label="Xem thêm phòng ban">···</a>
+              </div>
+              <div class="department-total"><strong>248</strong><span>nhân viên</span></div>
+              <div class="department-list">
+                <div class="department-item">
+                  <div class="department-meta"><span><i class="department-dot dot-purple"></i>Thiết kế</span><strong>68 <small>27,4%</small></strong></div>
+                  <div class="progress-track"><span class="progress-fill fill-purple" style="width: 78%"></span></div>
+                </div>
+                <div class="department-item">
+                  <div class="department-meta"><span><i class="department-dot dot-blue"></i>Công nghệ</span><strong>54 <small>21,8%</small></strong></div>
+                  <div class="progress-track"><span class="progress-fill fill-blue" style="width: 63%"></span></div>
+                </div>
+                <div class="department-item">
+                  <div class="department-meta"><span><i class="department-dot dot-orange"></i>Marketing</span><strong>42 <small>16,9%</small></strong></div>
+                  <div class="progress-track"><span class="progress-fill fill-orange" style="width: 49%"></span></div>
+                </div>
+                <div class="department-item">
+                  <div class="department-meta"><span><i class="department-dot dot-green"></i>Kinh doanh</span><strong>38 <small>15,3%</small></strong></div>
+                  <div class="progress-track"><span class="progress-fill fill-green" style="width: 44%"></span></div>
+                </div>
+                <div class="department-item">
+                  <div class="department-meta"><span><i class="department-dot dot-pink"></i>Nhân sự & vận hành</span><strong>46 <small>18,5%</small></strong></div>
+                  <div class="progress-track"><span class="progress-fill fill-pink" style="width: 53%"></span></div>
+                </div>
+              </div>
+            </section>
+
+            <section class="panel employees-panel" id="employees" aria-labelledby="employees-title" data-aos="fade-up">
+              <div class="panel-heading employee-heading">
+                <div><h2 id="employees-title">Nhân viên mới</h2><p>Chào đón những thành viên mới gia nhập</p></div>
+                <a class="secondary-button" href="#employees">Xem tất cả <span aria-hidden="true">→</span></a>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr><th scope="col">NHÂN VIÊN</th><th scope="col">VỊ TRÍ</th><th scope="col">PHÒNG BAN</th><th scope="col">NGÀY BẮT ĐẦU</th><th scope="col">TRẠNG THÁI</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><div class="employee-cell"><span class="avatar avatar-coral">HN</span><span><strong>Hoàng Ngọc</strong><small>ngoc.hoang@nova.vn</small></span></div></td>
+                      <td>Product Designer</td><td>Thiết kế</td><td>24/06/2025</td><td><span class="status-pill status-active">Đang làm việc</span></td>
+                    </tr>
+                    <tr>
+                      <td><div class="employee-cell"><span class="avatar avatar-blue">TA</span><span><strong>Trần Anh</strong><small>anh.tran@nova.vn</small></span></div></td>
+                      <td>Frontend Developer</td><td>Công nghệ</td><td>20/06/2025</td><td><span class="status-pill status-active">Đang làm việc</span></td>
+                    </tr>
+                    <tr>
+                      <td><div class="employee-cell"><span class="avatar avatar-yellow">LM</span><span><strong>Lê Minh</strong><small>minh.le@nova.vn</small></span></div></td>
+                      <td>Content Executive</td><td>Marketing</td><td>18/06/2025</td><td><span class="status-pill status-onboarding">Đang hội nhập</span></td>
+                    </tr>
+                    <tr>
+                      <td><div class="employee-cell"><span class="avatar avatar-green">PT</span><span><strong>Phạm Thảo</strong><small>thao.pham@nova.vn</small></span></div></td>
+                      <td>Talent Acquisition</td><td>Nhân sự</td><td>16/06/2025</td><td><span class="status-pill status-active">Đang làm việc</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="panel leave-panel" id="leave" aria-labelledby="leave-title" data-aos="fade-up">
+              <div class="panel-heading">
+                <div><h2 id="leave-title">Yêu cầu nghỉ phép</h2><p>Cần bạn xem xét</p></div>
+                <span class="request-count">03 mới</span>
+              </div>
+              <div class="leave-list">
+                <article class="leave-item">
+                  <span class="avatar avatar-yellow">ĐQ</span>
+                  <div class="leave-person"><strong>Đỗ Quỳnh</strong><span>Thiết kế · Nghỉ phép năm</span><small>25 – 27 tháng 6</small></div>
+                  <span class="leave-days">3 ngày</span>
+                </article>
+                <article class="leave-item">
+                  <span class="avatar avatar-coral">NV</span>
+                  <div class="leave-person"><strong>Nguyễn Vy</strong><span>Marketing · Nghỉ việc riêng</span><small>26 tháng 6</small></div>
+                  <span class="leave-days">1 ngày</span>
+                </article>
+                <article class="leave-item">
+                  <span class="avatar avatar-blue">BL</span>
+                  <div class="leave-person"><strong>Bùi Long</strong><span>Công nghệ · Nghỉ phép năm</span><small>30 tháng 6 – 1 tháng 7</small></div>
+                  <span class="leave-days">2 ngày</span>
+                </article>
+              </div>
+              <a class="leave-all-link" href="#leave">Xem tất cả yêu cầu <span aria-hidden="true">→</span></a>
+            </section>
+          </div>
+          <footer class="page-footer"><span>© 2025 PeopleHub</span><span>Quản lý nhân sự thật nhẹ nhàng <span aria-hidden="true">✦</span></span></footer>
         </div>
-        <a class="footer-email" href="mailto:hello@minhanh.design">
-          hello@minhanh.design <span aria-hidden="true">↗</span>
-        </a>
-        <div class="footer-bottom">
-          <span>© 2025 Minh Anh. Làm bằng sự tò mò và một tách cà phê.</span>
-          <a href="#home">Lên đầu trang ↑</a>
-        </div>
-      </footer>
+      </main>
     </div>
   </body>
 </html>
