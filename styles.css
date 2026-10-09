@@ -62,6 +62,7 @@
 
 html {
   min-width: 300px;
+  font-size: 16px;
   scroll-behavior: smooth;
 }
 
@@ -70,6 +71,8 @@ body {
   min-height: 100vh;
   margin: 0;
   background: var(--color-canvas);
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 a {
@@ -187,7 +190,7 @@ a {
 .user-copy strong {
   overflow: hidden;
   color: var(--color-text);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 700;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -196,7 +199,7 @@ a {
 .workspace-copy small,
 .user-copy small {
   color: var(--color-text-muted);
-  font-size: 9px;
+  font-size: 10px;
 }
 
 .chevron {
@@ -232,7 +235,7 @@ a {
   padding: 0 11px;
   border-radius: 8px;
   color: var(--color-text-secondary);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 500;
   transition: background-color 160ms ease, color 160ms ease;
 }
@@ -266,7 +269,7 @@ a {
   border-radius: 6px;
   background: var(--color-primary-soft);
   color: var(--color-text-muted);
-  font-size: 9px;
+  font-size: 10px;
   text-align: center;
 }
 
@@ -303,14 +306,14 @@ a {
 
 .help-card strong {
   color: var(--color-text);
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .help-card p {
   max-width: 165px;
   margin: 7px 0 11px;
   color: var(--color-text-muted);
-  font-size: 9px;
+  font-size: 10px;
   line-height: 1.6;
 }
 
@@ -319,7 +322,7 @@ a {
   align-items: center;
   gap: 5px;
   color: var(--color-primary-strong);
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 700;
 }
 
@@ -392,7 +395,7 @@ a {
   align-items: center;
   gap: 10px;
   color: var(--color-text-muted);
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .breadcrumbs strong {
@@ -411,7 +414,7 @@ a {
   align-items: center;
   gap: 7px;
   color: var(--color-text-muted);
-  font-size: 9px;
+  font-size: 10px;
   white-space: nowrap;
 }
 
@@ -433,7 +436,7 @@ a {
 
 .today-label {
   color: var(--color-text-secondary);
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .today-label span {
@@ -510,7 +513,7 @@ a {
 .welcome-copy {
   margin-top: 5px;
   color: var(--color-text-muted);
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .primary-button {
@@ -525,7 +528,7 @@ a {
   background: var(--color-primary);
   box-shadow: 0 4px 9px var(--color-shadow-primary);
   color: white;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 600;
   transition:
     background-color 220ms cubic-bezier(0.22, 1, 0.36, 1),
@@ -632,7 +635,7 @@ a {
 .stat-label {
   margin-top: 12px;
   color: var(--color-text-muted);
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .stat-value-row {
@@ -652,7 +655,7 @@ a {
 
 .stat-caption {
   color: var(--color-text-faint);
-  font-size: 8px;
+  font-size: 10px;
 }
 
 .mini-bars {
@@ -734,7 +737,7 @@ a {
 .panel-heading h2 {
   color: var(--color-text);
   font-family: var(--font-heading);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: -0.25px;
 }
@@ -742,7 +745,7 @@ a {
 .panel-heading p {
   margin-top: 4px;
   color: var(--color-text-muted);
-  font-size: 9px;
+  font-size: 10px;
 }
 
 .attendance-panel,
@@ -758,7 +761,7 @@ a {
   border: 1px solid var(--color-border-soft);
   border-radius: 6px;
   color: var(--color-text-secondary);
-  font-size: 9px;
+  font-size: 10px;
 }
 
 .select-control span {
@@ -1021,7 +1024,7 @@ thead {
 th {
   padding: 10px 11px;
   color: var(--color-text-faint);
-  font-size: 8px;
+  font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.55px;
 }
@@ -1040,7 +1043,7 @@ td {
   padding: 10px 11px;
   border-top: 1px solid var(--color-border-soft);
   color: var(--color-text-secondary);
-  font-size: 8px;
+  font-size: 9px;
 }
 
 .employee-cell {
@@ -1064,20 +1067,20 @@ td {
 
 .employee-cell strong {
   color: var(--color-text-secondary);
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 600;
 }
 
 .employee-cell small {
   color: var(--color-text-faint);
-  font-size: 7px;
+  font-size: 8px;
 }
 
 .status-pill {
   display: inline-block;
   padding: 5px 7px;
   border-radius: 5px;
-  font-size: 7px;
+  font-size: 8px;
   font-weight: 600;
 }
 
@@ -1128,7 +1131,7 @@ td {
 
 .leave-person strong {
   color: var(--color-text-secondary);
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 600;
 }
 
@@ -1136,7 +1139,7 @@ td {
 .leave-person small {
   overflow: hidden;
   color: var(--color-text-muted);
-  font-size: 7px;
+  font-size: 8px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
